@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>LEADERBOARD</h1>
+
+<table>
+    <tr>
+        <th>
+            <td>ID</td>
+            <td>Email</td>
+            <td>SCORE</td>
+        </th>
+    </tr>
+
+    {% for a in message2 %}
+
+    <tr>
+        <td>
+            <td>{{a.uid}}</td>
+            <td>{{a.email}}</td>
+            <td>{{a.score}}</td>
+        </td>
+    </tr>
+    {% endfor %}
+ </table>
+
+</body>
+</html>
